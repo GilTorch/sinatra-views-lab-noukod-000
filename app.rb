@@ -15,31 +15,6 @@ class App < Sinatra::Base
 	end
 
 	get '/date' do
-		date=DateTime::now
-
-		DAYSOFWEEK=[
-		  "Monday",
-		  "Tuesday",
-		  "Wednesday",
-		  "Thursday",
-		  "Friday"
-		]
-
-		MONTHS=[
-		  "January",
-		  "February",
-		  "March",
-		  "April",
-		  "May",
-		  "June",
-		  "July",
-		  "August",
-		  "September",
-		  "October",
-		  "November",
-		  "December"
-		]
-
 		erb :date
 	end
 end
