@@ -39,7 +39,7 @@ class App < Sinatra::Base
 		  "November",
 		  "December"
 		]
-		
+
 		erb :date
 	end
 end

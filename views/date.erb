@@ -4,6 +4,29 @@
   <body>
     <h1>Today</h1>
     <% date=DateTime::now %>
-    <%= "The date is "%>
+    <%    DAYSOFWEEK=[
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ]
+
+    MONTHS=[
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ]%>
+
+    <%="The date is #{DAYSOFWEEK[date.wday-1]}, #{MONTHS[date.month-1]} #{date.day}, #{date.year}"%>
   </body>
 </html>
