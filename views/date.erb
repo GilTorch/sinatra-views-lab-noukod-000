@@ -3,30 +3,6 @@
   <head></head>
   <body>
     <h1>Today</h1>
-    <% date=DateTime::now
-        DAYSOFWEEK=[
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday"
-    ]
-
-    MONTHS=[
-      "January",
-      "February",
-      "March",
-      "April",
-      "May",
-      "June",
-      "July",
-      "August",
-      "September",
-      "October",
-      "November",
-      "December"
-    ]%>
-
-    <%="The date is #{DAYSOFWEEK[date.wday-1]}, #{MONTHS[date.month-1]} #{date.day}, #{date.year}"%>
+    <% Date.today.strftime("%A, %B %d, %Y"))  %>
   </body>
 </html>
